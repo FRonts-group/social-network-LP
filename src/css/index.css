@@ -1,4 +1,4 @@
-
+@import './form.css';
 
 :root{
   --primary: #607D8B;
@@ -32,6 +32,7 @@
 /* General styles */
 h1{
   font: var(--h1Mobile);
+  margin: 0;
 }
 h2{
   font: var(--h2Mobile);
@@ -139,6 +140,11 @@ footer > p,footer > a, footer * a{
   body {
     /* background-color: #B2D6FF; Blue */
   }
+  .wrapper{
+    width: 950px;
+    margin: auto;
+
+  }
   h2{
     font: var(--h2Desktop);
   }
@@ -148,6 +154,9 @@ footer > p,footer > a, footer * a{
   p{
     font: var(--paragraphDesktop);
   }
+  a{
+     font: var(--paragraphDesktop);
+   }
   .only-mobile{
     display: none;
   }
@@ -161,7 +170,7 @@ footer > p,footer > a, footer * a{
    flex: 1;
   }
   .info--container * img{
-    width: 500px;
+    width: 450px;
   }
   .info--container:first-child {
     flex-direction: row;
