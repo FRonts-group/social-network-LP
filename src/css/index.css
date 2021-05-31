@@ -17,7 +17,7 @@
   --paragraphMobile: normal 1rem/1.2rem var(--basefontFamily);
   --paragraphBoldMobile: bold 1rem/1.2rem var(--basefontFamily);
   --h1Desktop: bold 3.875rem/4.65rem var(--basefontFamily);
-  --h2Desktop: normal 2.81rem/3.375rem var(--basefontFamily);
+  --h2Desktop: bold 2.81rem/3.375rem var(--basefontFamily);
   --h3Desktop: normal 2.18rem/2.62em var(--basefontFamily);
   --paragraphDesktop: normal 1.62rem/1.95rem var(--basefontFamily);
 }
@@ -138,5 +138,41 @@ footer > p,footer > a, footer * a{
 @media only screen and (min-width: 961px) {
   body {
     /* background-color: #B2D6FF; Blue */
+  }
+  h2{
+    font: var(--h2Desktop);
+  }
+  h3{
+    font: var(--h2Desktop);
+  }
+  p{
+    font: var(--paragraphDesktop);
+  }
+  .only-mobile{
+    display: none;
+  }
+  .only-desktop{
+    display: block;
+  }
+ .info--container{
+   display: flex;
+   flex-direction: row;
+   gap: 2rem;
+   flex: 1;
+  }
+  .info--container * img{
+    width: 500px;
+  }
+  .info--container:first-child {
+    flex-direction: row;
+      /* display: flex; */
+      /* flex-direction: column-reverse; */
+  }
+  button{
+    font: var(--paragraphDesktop)
+  }
+  footer > p,footer > a, footer * a{
+    color: var(--TextWhite);
+    font: var(--paragraphDesktop)
   }
 }
