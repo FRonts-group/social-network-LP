@@ -12,9 +12,10 @@
 
   --basefontFamily: 'Lato';
   --h1Mobile: bold 3rem/3.6rem var(--basefontFamily);
-  --h2Mobile: normal 1.875rem/2.25rem var(--basefontFamily);
+  --h2Mobile: bold 1.875rem/2.25rem var(--basefontFamily);
   --h3Mobile: normal 1.625rem/1.95rem var(--basefontFamily);
   --paragraphMobile: normal 1rem/1.2rem var(--basefontFamily);
+  --paragraphBoldMobile: bold 1rem/1.2rem var(--basefontFamily);
   --h1Desktop: bold 3.875rem/4.65rem var(--basefontFamily);
   --h2Desktop: normal 2.81rem/3.375rem var(--basefontFamily);
   --h3Desktop: normal 2.18rem/2.62em var(--basefontFamily);
@@ -34,9 +35,11 @@ h1{
 }
 h2{
   font: var(--h2Mobile);
+  margin: 0;
 }
 h3{
   font: var(--h3Mobile);
+  margin: .5rem 0;
 }
 p {
   font: var(--paragraphMobile);
@@ -45,5 +48,95 @@ p {
 a {
   text-decoration: none;
   font: var(--paragraphMobile);
-  color: var(--primaryVariant);
+  color: var(--TextBlack);
+}
+header{
+  width: 90%;
+  height: 70px;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  background: var(--primary);
+}
+.header--container{
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+}
+.only-mobile{
+  display: block;
+}
+.only-desktop{
+  display: none;
+}
+
+/* Styles for the home main */
+.wrapper{
+  padding-inline: 2.3rem;
+}
+.home-main{
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.info--container:first-child{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.info--container:last-child{
+  margin-block-end: 6rem;
+}
+.info--container{
+  margin-block: 2.3rem;
+}
+.info--container * img{
+  width: 100%;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.column > h3{
+  align-self: flex-start;
+}
+ button{
+  width: 50%;
+  height: 42px;
+  border: 0;
+  background-color: var(--secondaryVariant);
+  color: var(--TextWhite);
+  border-radius: 4px;
+  font: var(--paragraphBoldMobile);
+  cursor: pointer;
+}
+
+/* Styles of footer */
+footer{
+  width: 100%;
+  padding: 2rem .2rem;
+  background: var(--primary);
+  text-align: center;
+}
+footer > p,footer > a, footer * a{
+  color: var(--TextWhite);
+}
+.footerMenu > a:nth-child(1), .footerMenu > a:nth-child(2){
+  border-right: 2px solid var(--TextWhite);
+}
+.footerMenu > a{
+  padding-inline: .5rem;
+}
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    /* background-color: #F5CF8E; Yellow */
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    /* background-color: #B2D6FF; Blue */
+  }
 }
