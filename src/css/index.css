@@ -1,3 +1,6 @@
+@import './profiles.css';
+@import './user-homes.css';
+
 :root{
   --primary: #607D8B;
   --primaryVariant: #455A64;
@@ -67,6 +70,16 @@ header{
 }
 .only-desktop{
   display: none;
+}
+.header--container .iconLeft {
+  width: 40px;
+  height: 40px;
+}
+.header--container .iconLeft img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: contain;
 }
 
 
