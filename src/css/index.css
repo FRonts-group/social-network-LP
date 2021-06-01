@@ -1,5 +1,8 @@
 @import './profiles.css';
 @import './user-homes.css';
+@import './posts.css';
+@import './tags.css';
+@import './cards.css';
 
 :root{
   --primary: #607D8B;
