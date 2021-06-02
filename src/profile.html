@@ -23,21 +23,47 @@
       </div>
     </div>
   </header>
-  <main>
-    <section class="profile">
-      <div class="profile__info">
-        <div class="profile__image">
-          <img src="assets/images/profile-dummy.jpg" alt="">
+  <main class="sidebars-main">
+    <aside class="bar-menu only-desktop">
+      <div class="bar-menu__options-container">
+        <a href="" class="bar-menu__option selected"><span class="home-logo"></span>Inicio</a>
+        <a href="" class="bar-menu__option"><span class="profile-logo"></span>Perfil</a>
+        <a href="" class="bar-menu__option"><span class="bookmark-logo"></span>Mis Guardados</a>
+        <a href="" class="bar-menu__option"><span class="logout-logo"></span>Cerrar Sesion</a>
+      </div>
+    </aside>
+    <div class="main-content">
+      <section class="profile">
+        <div class="profile__info">
+          <div class="profile__image">
+            <img src="assets/images/profile-dummy.jpg" alt="">
+          </div>
+          <p class="profile__name">Nombre Inventado</p>
         </div>
-        <p class="profile__name">Nombre Inventado</p>
+        <div class="profile__options">
+          <button class="publish">Crear Publicación</button>
+          <button class="saved">Ver Guardados</button>
+          <button class="logout">Cerrar Sesion</button>
+        </div>
+      </section>
+      <section class="posts"></section>
+    </div>
+    <aside class="only-desktop side-tags">
+      <div class="tags">
+        <h3 class="tags__title">Temas Populares</h3>
+        <div class="tags__container">
+          <a href="" class="tags__tag"><button>Restaurantes</button></a>
+          <a href="" class="tags__tag"><button>Arte</button></a>
+          <a href="" class="tags__tag"><button>Baile</button></a>
+          <a href="" class="tags__tag"><button>Paísajes</button></a>
+          <a href="" class="tags__tag"><button>Aventura</button></a>
+          <a href="" class="tags__tag"><button>Discotecas</button></a>
+          <a href="" class="tags__tag"><button>Cafeterias</button></a>
+          <a href="" class="tags__tag"><button>Deportes</button></a>
+          <a href="" class="tags__tag"><button>Extremas</button></a>
+        </div>
       </div>
-      <div class="profile__options">
-        <button class="publish">Crear Publicación</button>
-        <button class="saved">Ver Guardados</button>
-        <button class="logout">Cerrar Sesion</button>
-      </div>
-    </section>
-    <section class="posts"></section>
+    </aside>
   </main>
   <script type="module" src="main.js"></script>
 </body>

@@ -48,8 +48,5 @@
   .profile__name {
     font: var(--paragraphDesktop);
   }
-  .profile__options button {
-    font: var(--paragraphDesktop);
-    font-weight: bold;
-  }
+
 }

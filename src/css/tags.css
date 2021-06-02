@@ -30,11 +30,13 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .tags__tag button{
-    height: 35px;
-    border-radius: 10px;
-    font: var(--paragraphDesktop);
-    font-size: 20px;
-    font-weight: bold;
+  .tags {
+    padding: 0;
+  }
+  .tags__container {
+    gap: 5px;
+  }
+  .tags__tag button {
+    font-size: 50%;
   }
 }
