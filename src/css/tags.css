@@ -1,6 +1,6 @@
 .tags {
   width: 90%;
-  max-width: 500px;
+  max-width: 400px;
   margin: 10px auto;
   padding: 0 5%;
 }
@@ -17,12 +17,24 @@
   place-content: center;
 }
 .tags__tag button{
-  min-width: 70px;
+  display: block;
+  min-width: 70%;
   height: 30px;
   margin: 0 auto;
-  border-radius: 16px;
-  display: block;
+  border-radius: 8px;
   background-color: var(--primary);
   border: 1px solid var(--primaryVariant);
-  text-align: center;
+  font: var(--paragraphBoldMobile);
+  color: var(--TextWhite);
+  line-height: 0px;
+}
+
+@media only screen and (min-width: 768px) {
+  .tags__tag button{
+    height: 35px;
+    border-radius: 10px;
+    font: var(--paragraphDesktop);
+    font-size: 20px;
+    font-weight: bold;
+  }
 }
