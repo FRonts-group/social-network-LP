@@ -1,0 +1,84 @@
+.bar-menu {
+  width: 25%;
+  height: 100vh;
+  background-color: var(--primary);
+}
+.bar-menu__options-container {
+  position: fixed;
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.bar-menu__option {
+  width: 80%;
+  max-width: 300px;
+  height: 40px;
+  margin: 3px 0;
+  background-color: var(--primary);
+  font: var(--paragraphBoldMobile);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+.bar-menu__options-container .selected{
+  background-color: var(--secondaryVariant);
+  color: var(--TextWhite);
+}
+.bar-menu__option span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+  background-color: var(--primaryVariant);
+}
+.bar-menu__options-container .selected span{
+  background-color: var(--TextWhite);
+}
+.home-logo {
+  -webkit-mask: url('../assets/icons/home-logo.svg') no-repeat 100% 100%;
+  mask: url('../assets/icons/home-logo.svg') no-repeat 100% 100%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+.profile-logo {
+  -webkit-mask: url('../assets/icons/profile-logo.svg') no-repeat 100% 100%;
+  mask: url('../assets/icons/profile-logo.svg') no-repeat 100% 100%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+.bookmark-logo {
+  -webkit-mask: url('../assets/icons/bookmark.svg') no-repeat 100% 100%;
+  mask: url('../assets/icons/bookmark.svg') no-repeat 100% 100%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+.logout-logo {
+  -webkit-mask: url('../assets/icons/logout-logo.svg') no-repeat 100% 100%;
+  mask: url('../assets/icons/logout-logo.svg') no-repeat 100% 100%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+.side-tags {
+  width: 25%;
+  
+  min-height: 100vh;
+  margin-right: 0;
+  margin-top: 0;
+  padding-left: 5px;
+  border-left: 3px solid var(--primaryVariant);
+}
+@media only screen and (min-width: 961px) {
+  .sidebars-main {
+    display: flex;
+    justify-content: center;
+  }
+  .main-content {
+    width: 50%;
+    min-height: 100vh;
+  }
+  .tags__tag button {
+    min-width: 50%;
+  }
+}
