@@ -1,0 +1,42 @@
+.tags {
+  width: 90%;
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 0 5%;
+}
+.tags__title {
+  margin: 15px auto 10px 0;
+}
+.tags__container {
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  place-content: center;
+}
+.tags__tag button{
+  display: block;
+  min-width: 70%;
+  height: 30px;
+  margin: 0 auto;
+  border-radius: 8px;
+  background-color: var(--primary);
+  border: 1px solid var(--primaryVariant);
+  font: var(--paragraphBoldMobile);
+  color: var(--TextWhite);
+  line-height: 0px;
+}
+
+@media only screen and (min-width: 768px) {
+  .tags {
+    padding: 0;
+  }
+  .tags__container {
+    gap: 5px;
+  }
+  .tags__tag button {
+    font-size: 50%;
+  }
+}

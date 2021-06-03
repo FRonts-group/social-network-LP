@@ -1,4 +1,10 @@
 @import './form.css';
+@import './profiles.css';
+@import './user-homes.css';
+@import './posts.css';
+@import './tags.css';
+@import './cards.css';
+@import './sidebars.css';
 
 :root{
   --primary: #607D8B;
@@ -63,7 +69,7 @@ header{
   background: var(--primary);
 }
 .header--container{
-  margin: .2rem;
+  margin: 1rem;
   display: flex;
   align-items: center;
 }
@@ -131,23 +137,9 @@ footer > p,footer > a, footer * a{
 .footerMenu > a{
   padding-inline: .5rem;
 }
-/* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  body {
-    /* background-color: #F5CF8E; Yellow */
-  }
-}
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  body {
-    /* background-color: #B2D6FF; Blue */
-  }
-  .wrapper{
-    width: 950px;
-    margin: auto;
-
-  }
   h2{
     font: var(--h2Desktop);
   }
@@ -186,5 +178,20 @@ footer > p,footer > a, footer * a{
   footer > p,footer > a, footer * a{
     color: var(--TextWhite);
     font: var(--paragraphDesktop)
+  }
+  .wrapper{
+      width: 950px;
+      margin: auto;
+
+    }
+  .header--container .iconLeft {
+    width: 40px;
+    height: 40px;
+  }
+  .header--container .iconLeft img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: contain;
   }
 }

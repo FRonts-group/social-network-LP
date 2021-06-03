@@ -1,0 +1,98 @@
+.posts{
+  width: 97%;
+  max-width: 1000px;
+  margin: 10px auto;
+}
+.post{
+  width: 90%;
+  max-width: 625px;
+  margin: 10px auto;
+  padding: 0 5%;
+  border: 3px solid var(--primaryVariant);
+  border-left: 0;
+  border-right: 0;
+}
+.post__author {
+  width: 70%;
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+}
+.post__author-image {
+  width: 40px;
+  height: 40px;
+}
+.post__author-image img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.post__author-name {
+  margin-left: 10px;
+  font: var(--paragraphBoldMobile);
+}
+.post__content {
+  width: 95%;
+  margin: 5px auto;
+}
+.post__images {
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  gap: 5px;
+}
+.post__images img{
+  width: 100%;
+  object-fit: contain;
+}
+.post__reactions {
+  width: 100%;
+  margin: 10px auto 5px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.post__reactions .post__button {
+  width: 45%;
+  height: 30px;
+  max-width: 130px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--backgroundColor);
+  border: 0;
+  color: var(--TextBlack);
+  font: var(--paragraphMobile);
+}
+.post__reactions .post__button .post__hearth,
+.post__reactions .post__button .post__bookmark {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.post__reactions .post__button .post__hearth {
+  background-color: var(--primaryVariant);
+  -webkit-mask: url('../assets/icons/hearth-border.svg') no-repeat 100% 100%;
+  mask: url('../assets/icons/hearth-border.svg') no-repeat 100% 100%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+.post__reactions .post__button .post__bookmark {
+  background-color: var(--secondaryVariant);
+  -webkit-mask: url('../assets/icons/bookmark_border.svg') no-repeat 100% 100%;
+  mask: url('../assets/icons/bookmark_border.svg') no-repeat 100% 100%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+.post__reactions .post__likes-count {
+  margin-right: 5px;
+  margin-left: 2px;
+}
+
+@media only screen and (min-width: 961px) {
+  .post__author-name {
+    font: var(--paragraphDesktop);
+    font-weight: bold;
+  }
+}
