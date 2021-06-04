@@ -1,25 +1,13 @@
-import getPosts from './utils/getPosts.js';
+import getPosts from './utils/queryPosts.js';
+import configFirebase from './utils/configFirebase.js';
+import getTags from './utils/queryTags.js';
 
 
-  // Initialize Firebase
-  const configFirebase = {
-  apiKey: "AIzaSyCMTdDvkWo4Mgg7tYwPQrgzegOkWC3EQmw",
-  authDomain: "bloodhope-ieee.firebaseapp.com",
-  databaseURL: "https://bloodhope-ieee.firebaseio.com",
-  projectId: "bloodhope-ieee",
-  storageBucket: "bloodhope-ieee.appspot.com",
-  messagingSenderId: "185025396740",
-  appId: "1:185025396740:web:13d1f64a4c4d1281a87551"
-};
 export const myFunction = async () => {
-  // aqui tu codigo
-  // $(() => {
 
-    // Init Firebase nuevamente
+  // Init Firebase nuevamente
   firebase.initializeApp(configFirebase);
-
   await getPosts();
+  await getTags();
 
-
-  // })
 };

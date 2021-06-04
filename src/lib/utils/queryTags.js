@@ -1,9 +1,12 @@
-const getPosts = async () => {
+//Query functions to the database tags
+
+// TODO Get all posts.
+const getTags = async () => {
   const database = firebase.database();
   let data = [];
   try {
 
-    const postsData = await database.ref('posts/');
+    const postsData = await database.ref('tags/');
     postsData.on('value', (snapshot) => {
       data = snapshot.val();
       console.log(data);
@@ -15,5 +18,4 @@ const getPosts = async () => {
   };
 
 }
-
-export default getPosts;
+export default getTags;
