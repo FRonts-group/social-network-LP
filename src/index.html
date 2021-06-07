@@ -2,11 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Guía de La Paz</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="./css/index.css" />
+  <!-- typography Lato   -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
+    rel="stylesheet">
 </head>
-<body>
+<body class="body">
+
+  <header>
+    <div class="header--container">
+      <a class="only-desktop" href="#"><h2>Guía de La Paz</h2></a>
+      <a class="only-mobile" href="#"><h2>La Paz</h2></a>
+    </div>
+    <div class="header--container">
+      <div class="iconLeft">
+          <a href="index.html"> <i></i> Iniciar Sesión</a>
+      </div>
+    </div>
+  </header>
+  <main class="home-main">
+    <div class="wrapper">
+        <div class="home--container">
+          <div class="info--container">
+            <div class="column">
+              <h3>Lorem ipsum</h3>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+              mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+              <button id="primary-button">Iniciar Sesión</button>
+            </div>
+            <div class="column">
+              <img src="https://image.freepik.com/foto-gratis/fondo-degradado-blanco-gris-sala-estudio-blanco_28629-646.jpg" width="200px" alt="Fondo degradado gris">
+            </div>
+          </div>
+
+          <div class="info--container">
+            <div class="column">
+              <img src="https://image.freepik.com/foto-gratis/fondo-degradado-blanco-gris-sala-estudio-blanco_28629-646.jpg" width="200px" alt="Fondo degradado gris">
+            </div>
+            <div class="column">
+              <h3>Lorem ipsum</h3>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+              <!-- <button id="primary-button">PLAY</button> -->
+            </div>
+
+          </div>
+        </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footerMenu">
+      <a href="#">INICIO</a>
+      <a href="#">INICIAR SESIÓN</a>
+      <a href="#">REGISTRARSE</a>
+    </div>
+    <p id="collaborators">Made with ♥ by <a href="https://github.com/fabiola29298">Fabiola</a> and <a
+        href="https://github.com/rodrigojgq">Rodrigo</a> </p>
+    <a  href="https://github.com/FRonts-group/social-network-LP" id="repository">
+      <span class="logo-container"></span> Check out our repository in Github
+    </a>
+  </footer>
   <script type="module" src="main.js"></script>
 </body>
+<!-- Firebase App is always required and must be first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+
 </html>

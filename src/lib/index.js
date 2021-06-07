@@ -1,6 +1,13 @@
-// aqui exportaras las funciones que necesites
+import getPosts from './utils/queryPosts.js';
+import configFirebase from './utils/configFirebase.js';
+import getTags from './utils/queryTags.js';
 
-export const myFunction = () => {
-  // aqui tu codigo
-  console.log('Hola mundo!');
+
+export const myFunction = async () => {
+
+  // Init Firebase nuevamente
+  firebase.initializeApp(configFirebase);
+  await getPosts();
+  await getTags();
+
 };
