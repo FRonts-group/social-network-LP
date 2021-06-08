@@ -1,25 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <title>Guía de La Paz</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Guía de La Paz</title>
-  <link rel="stylesheet" href="./css/index.css" />
-  <!-- typography Lato   -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
-    rel="stylesheet">
-</head>
-
-<body class="body">
-
-  <main class="form-main">
+const Signup = () => {
+  const view = `
     <div class="wrapper">
       <div class="form--container">
-
         <h1>Guía de <br> La Paz</h1>
         <h2>Registro</h2>
         <div class="input--container">
@@ -52,8 +34,8 @@
         </div>
       </div>
     </div>
-  </main>
-  <script type="module" src="main.js"></script>
-</body>
+  `;
+  return view;
+};
 
-</html>
+export default Signup;
