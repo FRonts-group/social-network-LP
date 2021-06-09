@@ -6,7 +6,7 @@ const Header = () => {
     </div>
     <div class="header--container">
       <div class="iconLeft">
-        <a href="index.html"> <i></i> Iniciar Sesión</a>
+        <a href="#/iniciar-sesion"> <i></i> Iniciar Sesión</a>
       </div>
     </div>
   `;

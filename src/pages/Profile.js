@@ -1,5 +1,7 @@
 const Profile = () => {
-  const user;
+  let user = {
+    name: "Nombre Inventado"
+  };
   const view = `
     <div class="main-content">
       <section class="profile">
